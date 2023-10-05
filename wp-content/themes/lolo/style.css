@@ -8940,3 +8940,32 @@ input[type=number] {
 .woocommerce table.shop_table td.product-quantity input[type="button"]:focus {
     color: #000;
 }
+
+.popup-add-to-cart {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    border: 1px solid #666;
+    background-color: #00000050;
+    z-index: 99999;
+}
+
+.popup-add-to-cart img {
+    width: 50px;
+}
+
+.popup-add-to-cart .content-popup {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    top: 200px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.popup-add-to-cart .content-popup p {
+    text-align: center;
+}

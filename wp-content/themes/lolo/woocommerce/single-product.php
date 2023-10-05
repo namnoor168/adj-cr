@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $smof_data;
+global $smof_data, $post, $product;
 
 get_header( $smof_data['ftc_header_layout'] ); 
 
@@ -52,20 +52,53 @@ ftc_breadcrumbs_title(true, $show_page_title, get_the_title());
 
 			</div>
 			<div class="col-md-3">
-			<ul class="ybc-widget-ybc-custom-2">
-                <li class="ybc-widget-item">
-                    <div class="content_toggle ybc_links_page_home">
-                            <h4 class="ybc-widget-title">Dịch vụ sau mua<h4>
-					<div class="ybc-widget-description">
-						<ul style="padding-top: 30px;">
-							<li class="item"><img data-src="" src="https://www.pnj.com.vn/images/image-update/2021/detail-bhtd/icon-baohanh.svg">&nbsp;Bảo hành miễn phí trọn đời: Lỗi kỹ thuật, nước xi...</li>
-							<li class="item"><img class="img-lazyload img" data-src="" src="https://www.pnj.com.vn/images/image-update/2021/detail-bhtd/icon-sieuamdanhbong.svg" alt="" style="opacity: 1;"> <span class="text"> Miễn phí siêu âm và đánh bóng bằng máy chuyên dụng trọn đời </span></li>
-							<li class="item"><img class="img-lazyload img" data-src="" src="https://www.pnj.com.vn/images/image-update/2021/detail-bhtd/icon-baohanh.svg" alt=""> <span class="text"> Miễn phí thay đá CZ và đá tổng hợp</span></li>
-						</ul>
-						<p>&nbsp;</p></div>
-                    </div>
-                </li>
-            </ul>
+				<ul class="ybc-widget-ybc-custom-2">
+					<li class="ybc-widget-item">
+						<div class="content_toggle ybc_links_page_home">
+								<h4 class="ybc-widget-title">Dịch vụ sau mua<h4>
+						<div class="ybc-widget-description">
+							<ul style="padding-top: 30px;">
+								<li class="item"><img data-src="" src="https://www.pnj.com.vn/images/image-update/2021/detail-bhtd/icon-baohanh.svg">&nbsp;Bảo hành miễn phí trọn đời: Lỗi kỹ thuật, nước xi...</li>
+								<li class="item"><img class="img-lazyload img" data-src="" src="https://www.pnj.com.vn/images/image-update/2021/detail-bhtd/icon-sieuamdanhbong.svg" alt="" style="opacity: 1;"> <span class="text"> Miễn phí siêu âm và đánh bóng bằng máy chuyên dụng trọn đời </span></li>
+								<li class="item"><img class="img-lazyload img" data-src="" src="https://www.pnj.com.vn/images/image-update/2021/detail-bhtd/icon-baohanh.svg" alt=""> <span class="text"> Miễn phí thay đá CZ và đá tổng hợp</span></li>
+							</ul>
+							<p>&nbsp;</p></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="popup-add-to-cart">
+				<div class="content-popup">
+					<p>Sản phẩm đã được thêm vào giỏ hàng</p>
+					<div class="row">
+						<p><?php the_title() ?></p>
+						<?php	
+							if ( has_post_thumbnail() ) {
+								$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+								$full_size_image   = wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+								$attributes = array(
+									'title'                   => get_post_field( 'post_excerpt', $post_thumbnail_id ),
+									'data-caption'            => get_post_field( 'post_excerpt', $post_thumbnail_id ),
+									'data-src'                => $full_size_image[0],
+									'data-large_image'        => $full_size_image[0],
+									'data-large_image_width'  => $full_size_image[1],
+									'data-large_image_height' => $full_size_image[2],
+								);
+						
+								
+									$html  = '<div data-thumb="' . get_the_post_thumbnail_url( $post->ID, 'shop_thumbnail' ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_size_image[0] ) . '">';
+									$html .= get_the_post_thumbnail( $post->ID, 'shop_single', $attributes );
+									$html .= '</a></div>';
+								
+							} else {
+								$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+								$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'lolo' ) );
+								$html .= '</div>';
+							}
+							echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, get_post_thumbnail_id( $post->ID ) );
+						?>
+					</div>
+				</div>
 			</div>
 			<?php
 				/**
