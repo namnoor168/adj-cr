@@ -1,0 +1,105 @@
+2023-10-04T11:29:42+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_get_custom_sidebars() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php:85
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\functions.php(22): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-settings.php(600): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\adj-cr\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\adj-cr\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\adj-cr\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php on line 85
+
+2023-10-04T11:33:14+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_get_custom_sidebars() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php:16
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\functions.php(22): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-settings.php(600): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\adj-cr\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\adj-cr\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\adj-cr\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php on line 16
+
+2023-10-04T11:33:17+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_get_custom_sidebars() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php:16
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\functions.php(22): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-settings.php(600): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\adj-cr\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\adj-cr\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\adj-cr\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php on line 16
+
+2023-10-04T11:33:30+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php:34
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php(34): array_merge(NULL, Array)
+#1 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(310): ftc_register_widget_area('')
+#2 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\adj-cr\wp-includes\widgets.php(1858): do_action('widgets_init')
+#5 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#6 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\adj-cr\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\adj-cr\wp-settings.php(632): do_action('init')
+#9 C:\xampp\htdocs\adj-cr\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\adj-cr\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\adj-cr\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\adj-cr\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php on line 34
+
+2023-10-04T11:33:34+00:00 CRITICAL Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php:34
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php(34): array_merge(NULL, Array)
+#1 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(310): ftc_register_widget_area('')
+#2 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\adj-cr\wp-includes\widgets.php(1858): do_action('widgets_init')
+#5 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#6 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\adj-cr\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\adj-cr\wp-settings.php(632): do_action('init')
+#9 C:\xampp\htdocs\adj-cr\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\adj-cr\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\adj-cr\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\adj-cr\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\register_sidebar.php on line 34
+
+2023-10-04T11:33:57+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_header_mobile_navigation() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php:35
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template.php(785): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\adj-cr\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\single-product.php(16): get_header('layout3')
+#4 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php on line 35
+
+2023-10-04T11:35:22+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_theme_mobile_logo() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php:58
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template.php(785): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\adj-cr\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\single-product.php(16): get_header('layout3')
+#4 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php on line 58
+
+2023-10-04T11:36:05+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_theme_mobile_logo() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php:58
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template.php(785): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\adj-cr\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\single-product.php(16): get_header('layout3')
+#4 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php on line 58
+

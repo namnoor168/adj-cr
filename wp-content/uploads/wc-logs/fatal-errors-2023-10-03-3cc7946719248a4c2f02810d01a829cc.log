@@ -1,0 +1,58 @@
+2023-10-03T13:28:19+00:00 CRITICAL Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in C:\xampp\htdocs\adj-cr\wp-content\plugins\js_composer\include\classes\editors\class-vc-frontend-editor.php on line 644
+
+2023-10-03T13:28:55+00:00 CRITICAL Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in C:\xampp\htdocs\adj-cr\wp-content\plugins\js_composer\include\classes\editors\class-vc-frontend-editor.php on line 644
+
+2023-10-03T15:06:32+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_header_mobile_navigation() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php:35
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template.php(785): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\adj-cr\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\single-product.php(16): get_header('layout1')
+#4 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php on line 35
+
+2023-10-03T15:06:32+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_header_mobile_navigation() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php:35
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template.php(785): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\adj-cr\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\404.php(12): get_header('layout1')
+#4 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php on line 35
+
+2023-10-03T15:06:33+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_header_mobile_navigation() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php:35
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template.php(785): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\adj-cr\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\404.php(12): get_header('layout1')
+#4 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\header.php on line 35
+
+2023-10-03T15:36:15+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_page_layout_columns_class() in C:\xampp\htdocs\adj-cr\wp-content\themes\crismaster\woocommerce\single-product.php:19
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\crismaster\woocommerce\single-product.php on line 19
+
+2023-10-03T15:36:35+00:00 CRITICAL Uncaught Error: Call to undefined function ftc_page_layout_columns_class() in C:\xampp\htdocs\adj-cr\wp-content\themes\crismaster\woocommerce\single-product.php:18
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\crismaster\woocommerce\single-product.php on line 18
+
+2023-10-03T15:42:14+00:00 CRITICAL syntax error, unexpected token "*", expecting end of file in C:\xampp\htdocs\adj-cr\wp-content\themes\crismaster\woocommerce\single-product.php on line 64
+

@@ -1,0 +1,40 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 24/11/2016 06:47
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("https://cdn.adj.com.vn/themes/classic/modules/tea_themelayout/views/fonts/Flaticon.eot");
+  src: url("https://cdn.adj.com.vn/themes/classic/modules/tea_themelayout/views/fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("https://cdn.adj.com.vn/themes/classic/modules/tea_themelayout/views/fonts/Flaticon.woff") format("woff"),
+       url("https://cdn.adj.com.vn/themes/classic/modules/tea_themelayout/views/fonts/Flaticon.ttf") format("truetype"),
+       url("https://cdn.adj.com.vn/themes/classic/modules/tea_themelayout/views/fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("https://cdn.adj.com.vn/themes/classic/modules/tea_themelayout/views/fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.flaticon-bag:before { content: "\f100"; }
+.flaticon-cold:before { content: "\f101"; }
+.flaticon-fashion:before { content: "\f102"; }
+.flaticon-flash:before { content: "\f103"; }
+.flaticon-high-sneaker:before { content: "\f104"; }
+.flaticon-man:before { content: "\f105"; }
+.flaticon-new:before { content: "\f106"; }
+.flaticon-percentage:before { content: "\f107"; }
+.flaticon-sneaker-shoe-outline-of-fashion-walking-tool:before { content: "\f108"; }
+.flaticon-sunglasses:before { content: "\f109"; }
