@@ -694,16 +694,12 @@ function ftc_product_remove_tabs($tabs = array()) {
 function ftc_add_product_custom_tab($tabs = array()) {
     global $smof_data, $post;
 
-    $custom_tab_title = $smof_data['ftc_prod_custom_tab_title'];
-
     $product_custom_tab = get_post_meta($post->ID, 'ftc_prod_custom_tab', true);
-    if ($product_custom_tab) {
-        $custom_tab_title = get_post_meta($post->ID, 'ftc_prod_custom_tab_title', true);
-    }
+    
 
     if (isset($smof_data['ftc_prod_custom_tab']) && $smof_data['ftc_prod_custom_tab']) {
         $tabs['ftc_custom'] = array(
-            'title' => __( 'Chi tiết sản phẩm', 'lolo' ), do_shortcode(stripslashes(wp_specialchars_decode($custom_tab_title)))
+            'title' => __( 'Chi tiết sản phẩm', 'lolo' )
             , 'priority' => 10
             , 'callback' => "ftc_product_custom_tab_content"
         );

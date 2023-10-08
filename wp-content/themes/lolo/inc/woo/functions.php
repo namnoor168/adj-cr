@@ -118,32 +118,28 @@ if (!function_exists('ftc_tiny_account')) {
     }
 }
 
-
-
-add_action('wp_footer', 'ftc_canvas_cart');
-function ftc_canvas_cart(){
+add_action('wp_footer', 'ftc_popup_cart');
+function ftc_popup_cart(){
     if (!ftc_has_woocommerce()) {
         return '';
     }
-    global $smof_data;
     ?>
-    <?php if(isset($smof_data['ftc_cart_layout']) && $smof_data['ftc_cart_layout'] == 'off-canvas'): ?>
-        <div class="ftc-off-canvas-cart">
-            <div class="off-canvas-cart-title">
-                <div class="title"><?php echo esc_html__('Shopping Cart', 'lolo'); ?></div>
-                <a  class="close-cart"> <?php echo esc_html__('Close', 'lolo') ?></a>
+    <div id="blockcart-modal" class="popup-add-to-cart d-none">
+        <div class="content-popup">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="đóng">
+                <span aria-hidden="true"><i class="material-icons">close</i></span>
+                </button>
+                <h4 class="modal-title h6 text-sm-center" id="myModalLabel"><i class="material-icons rtl-no-flip"></i>Sản phẩm đã được thêm vào giỏ hàng</h4>
             </div>
-            <div class="off-can-vas-inner">
-                <div class="woocommerce widget_shopping_cart">
-                    <div class="widget_shopping_cart_content">
-                        <?php print_r(woocommerce_mini_cart()); ?>
-                    </div>
+            <div class="woocommerce widget_shopping_cart">
+                <div class="widget_shopping_cart_content">
+                    <?php print_r(woocommerce_mini_cart()); ?>
                 </div>
             </div>
         </div>
-    <?php endif; ?>
+    </div>
     <?php
-
 }
 add_action('wp_footer', 'ftc_login_form');
 function ftc_login_form(){

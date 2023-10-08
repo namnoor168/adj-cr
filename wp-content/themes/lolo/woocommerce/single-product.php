@@ -67,39 +67,6 @@ ftc_breadcrumbs_title(true, $show_page_title, get_the_title());
 					</li>
 				</ul>
 			</div>
-			<div class="popup-add-to-cart">
-				<div class="content-popup">
-					<p>Sản phẩm đã được thêm vào giỏ hàng</p>
-					<div class="row">
-						<p><?php the_title() ?></p>
-						<?php	
-							if ( has_post_thumbnail() ) {
-								$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
-								$full_size_image   = wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
-								$attributes = array(
-									'title'                   => get_post_field( 'post_excerpt', $post_thumbnail_id ),
-									'data-caption'            => get_post_field( 'post_excerpt', $post_thumbnail_id ),
-									'data-src'                => $full_size_image[0],
-									'data-large_image'        => $full_size_image[0],
-									'data-large_image_width'  => $full_size_image[1],
-									'data-large_image_height' => $full_size_image[2],
-								);
-						
-								
-									$html  = '<div data-thumb="' . get_the_post_thumbnail_url( $post->ID, 'shop_thumbnail' ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_size_image[0] ) . '">';
-									$html .= get_the_post_thumbnail( $post->ID, 'shop_single', $attributes );
-									$html .= '</a></div>';
-								
-							} else {
-								$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-								$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'lolo' ) );
-								$html .= '</div>';
-							}
-							echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, get_post_thumbnail_id( $post->ID ) );
-						?>
-					</div>
-				</div>
-			</div>
 			<?php
 				/**
 				 * woocommerce_after_main_content hook

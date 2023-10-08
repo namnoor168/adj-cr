@@ -1,0 +1,49 @@
+2023-10-07T13:34:19+00:00 CRITICAL Cannot redeclare custom_widget_shopping_cart_button_view_cart() (previously declared in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php:37) in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php on line 36
+
+2023-10-07T13:34:31+00:00 CRITICAL Cannot redeclare custom_widget_shopping_cart_button_view_cart() (previously declared in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php:37) in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php on line 36
+
+2023-10-07T14:50:56+00:00 CRITICAL Cannot redeclare custom_widget_shopping_cart_button_view_cart() (previously declared in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php:37) in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php on line 36
+
+2023-10-07T14:51:02+00:00 CRITICAL Cannot redeclare custom_widget_shopping_cart_button_view_cart() (previously declared in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php:37) in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php on line 36
+
+2023-10-07T14:51:12+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_widget_shopping_cart_button_view_cart" not found or invalid function name in C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php:310
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\adj-cr\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php(95): do_action('woocommerce_wid...')
+#3 C:\xampp\htdocs\adj-cr\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\adj-cr\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2285): wc_get_template('cart/mini-cart....', Array)
+#5 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\single-product.php(79): woocommerce_mini_cart()
+#6 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php on line 310
+
+2023-10-07T14:51:22+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_widget_shopping_cart_button_view_cart" not found or invalid function name in C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php:310
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\adj-cr\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php(95): do_action('woocommerce_wid...')
+#3 C:\xampp\htdocs\adj-cr\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\adj-cr\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2285): wc_get_template('cart/mini-cart....', Array)
+#5 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\single-product.php(79): woocommerce_mini_cart()
+#6 C:\xampp\htdocs\adj-cr\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\adj-cr\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-includes\class-wp-hook.php on line 310
+
+2023-10-07T14:52:31+00:00 CRITICAL Cannot redeclare custom_widget_shopping_cart_proceed_to_checkout() (previously declared in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php:43) in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\woocommerce\cart\mini-cart.php on line 42
+
+2023-10-07T16:03:10+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_mini_cart() in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\woo\functions.php:139
+Stack trace:
+#0 C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\functions.php(253): require_once()
+#1 C:\xampp\htdocs\adj-cr\wp-settings.php(600): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\adj-cr\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\adj-cr\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\adj-cr\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\adj-cr\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\adj-cr\wp-content\themes\lolo\inc\woo\functions.php on line 139
+

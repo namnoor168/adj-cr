@@ -24,7 +24,7 @@ if ( $related_products ) : ?>
 
 	<div class="related products">
 
-		<h2><span class="bg-heading"><span><?php esc_html_e( '#Related products', 'lolo' ); ?></span></span></h2>
+		<h2><span class="bg-heading"><span><?php esc_html_e( 'Bạn cũng có thể thích', 'lolo' ); ?></span></span></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 

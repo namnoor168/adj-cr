@@ -50,18 +50,21 @@ if(isset($smof_data['ftc_prod_tabs']) && $smof_data['ftc_prod_tabs']){
 
 				<div class="woocommerce-tabs accordion-tabs">
 					<?php $counter = 1; ?>
-					<ul class="tabs-nav">
-						<?php foreach ( $tabs as $key => $tab ) : ?>
-							<li class="<?php echo esc_attr( $key ); ?>_tab tab-<?php echo esc_attr( $counter); ?> tab-title" data-tab="<?php echo esc_attr( $counter); ?>">
-								<a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
-							</li>
-							<div class="tab-content tab-<?php echo esc_attr( $counter); ?>" id="tab-<?php echo esc_attr( $key ); ?>">
-								<?php call_user_func( $tab['callback'], $key, $tab ); ?>
+					
+					<div class="description_tabs">
+              			<div class="tab-content" id="tab-content">
+						  <?php foreach ( $tabs as $key => $tab ) : ?>
+							<div class="description_tabs_item">
+								<a class="tab_title" href="#tab-<?php echo esc_attr( $key ); ?>" role="tab" aria-controls="<?php echo esc_attr( $key ); ?>">
+									<?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?>
+								</a>
+								<div class="tab-pane" id="tab-<?php echo esc_attr( $key ); ?>" role="tabpanel"> 
+									<?php call_user_func( $tab['callback'], $key, $tab ); ?>        
+								</div>
 							</div>
-							<?php $counter++; ?>
 						<?php endforeach; ?>
-					</ul>
-
+    					</div>
+					</div>
 				</div>
 
 			<?php endif; ?>

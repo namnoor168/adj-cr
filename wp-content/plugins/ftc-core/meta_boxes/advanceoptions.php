@@ -44,7 +44,7 @@ class Ftc_Metaboxes{
 					)
 					,array(
 						'id'			=> 'product_options'
-						,'label'		=> esc_html__('Product Options', 'ftc-element')
+						,'label'		=> esc_html__('Chi tiết sản phẩm', 'ftc-element')
 						,'post_type'	=> 'product'
 					)
 					,array(
